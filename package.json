@@ -1,0 +1,21 @@
+{
+  "name": "wsppostulantes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "git add -A && git commit -m \"Añadidos cambios y mejoras\" && git push",
+    "scss": "sass --watch css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IngenioInnato/WSP-Postulantes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IngenioInnato/WSP-Postulantes/issues"
+  },
+  "homepage": "https://github.com/IngenioInnato/WSP-Postulantes#readme"
+}
