@@ -1,0 +1,48 @@
+@mixin button($color) {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 3rem;
+  color: #fff;
+  background: $color;
+  border-radius: 29% / 200%;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:focus{
+      outline: none;
+  }
+}
+.btn-green {
+  @include button($green);
+}
+.btn-orange {
+  @include button($orange);
+}
+.btn-blue{
+  @include button($blue);
+}
+
+  // Ripple
+  .btn-ripple > span {
+    position: absolute;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    animation: animate 1s linear infinite;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-animation: animate 1s linear infinite;
+}
+@keyframes animate {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+  }
+} 
